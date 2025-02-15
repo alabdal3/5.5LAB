@@ -4,6 +4,10 @@
     --main-bg-color: #E9E9E9;
     --primary-text-color: #424242;
     --accent-color: #FF3F3C;
+    --button-text-color: #FFFFFF;
+    --input-bg-color: #FFFFFF;
+    --input-border-color: #D1D1D1;
+    --button-border-color: #B0B0B0;
 }
 
 body {
@@ -21,15 +25,95 @@ header {
 
 header h1 {
     margin: 0;
-    font-weight: normal;
+    font-weight: 900;
 }
 
 main {
-    background: url('/images/Polaroid.png') no-repeat center 100px;
+    background: url('/images/Polaroid.png') no-repeat center 60px;
     margin: 0 auto;
     width: 1000px;
 }
+
 .hero {
     text-align: center;
     min-height: 800px;
+}
+
+.hero h2{
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.details h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 55px;
+}
+
+.details ul li.qr {
+    background: url('/images/qrcode.png') no-repeat center left;
+}
+
+.details ul li.wifi {
+    background: url('/images/wifi.png') no-repeat center left;
+}
+
+.details ul li.cloud {
+    background: url('/images/cloud.png') no-repeat center left;
+}
+
+.details ul li.photo {
+    background: url('/images/photo.png') no-repeat center left;
+}
+
+.cta {
+    margin: 40px 0;
+}
+
+.cta h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.cta form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cta input[type="text"] {
+    padding: 12px;
+    font-size: 1rem;
+    width: 350px;
+    background: var(--input-bg-color);
+    margin-right: 10px;
+}
+
+.cta input[type="button"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--button-text-color);
+    background: var(--accent-color);
+    cursor: pointer;
+}
+
+.cta input[type="button"]:hover {
+    background: #D93632;
+}
+.cta .input-container {
+    display: flex;
+    border: 40px solid var(--input-border-color);
+    border-radius: 8px;
+    overflow: hidden;
 }
